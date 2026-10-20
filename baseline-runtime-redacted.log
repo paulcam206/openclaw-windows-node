@@ -1,0 +1,3 @@
+[2026-10-20 05:26:25.615] [ERROR] OnLaunched failed: System.NotImplementedException: Not implemented
+SetShownInSwitchers failed.
+   at OpenClawTray.Services.WindowManager.InitializeRuntimeAnchor() in <redacted-path>

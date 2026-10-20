@@ -1,0 +1,42 @@
+{
+  "pr": 1783,
+  "reviewedHead": "8c3726341c5562884a7b5d7dfb52809b77661d21",
+  "ciRun": "https://github.com/openclaw/openclaw-windows-node/actions/runs/39472104684",
+  "uiJob": {
+    "url": "https://github.com/openclaw/openclaw-windows-node/actions/runs/39472104684/job/118799779526",
+    "functional": "19 passed, zero failed",
+    "trayUi": "87 reported cases passed, then test host crashed; no individual assertion failure",
+    "activeCaseAtAbort": "ReactorChatLayoutProofTests.ComposerFlyouts_UseBoundedNativePopoverPresentation",
+    "accessibility": "not established by this aborted job",
+    "classification": "pre-existing intermittent native UI test-host abort class; same signature on main before and after this PR; exact underlying native crash cause not established"
+  },
+  "traySetupJob": {
+    "url": "https://github.com/openclaw/openclaw-windows-node/actions/runs/39472104684/job/118799779334",
+    "failedCase": "NativeGatewaySetupConnectionTests.PostRestartVerification_BorrowsNormalOwnerAndRejectsUnownedOrReplacedAuthority(isolated: True)",
+    "failure": "WebSocket closed without close handshake during synthetic fixture cleanup",
+    "classification": "unchanged setup/loopback-fixture path, unrelated to the startup owners in this PR; intermittent fixture teardown failure, not a demonstrated introduced product defect"
+  },
+  "exactBaseComparison": {
+    "head": "431bd8f9c1aabd2b0c933afcbee82a07ac0646a8",
+    "run": "https://github.com/openclaw/openclaw-windows-node/actions/runs/39468661666",
+    "outcome": "success",
+    "sameUiCase": "all four reported variants passed",
+    "sameSetupCase": "isolated and non-isolated variants passed"
+  },
+  "earlierMainUiComparison": {
+    "head": "0131e4ce1f7937b22c69b289564087061687fa14",
+    "run": "https://github.com/openclaw/openclaw-windows-node/actions/runs/39457279193",
+    "outcome": "same test-host-crashed abort signature before this PR"
+  },
+  "recentMainUiComparison": {
+    "head": "067c58f63fb3e0895d248ff6c47cd75835b0357c",
+    "run": "https://github.com/openclaw/openclaw-windows-node/actions/runs/39492780667",
+    "outcome": "144 reported cases passed and two were skipped before the same test-host-crashed abort signature",
+    "activeCaseAtAbort": "ReactorChatLayoutProofTests.ReasoningPicker_PreservesCurrentValueWithoutInventingSupportedOptions",
+    "sameSetupCase": "both variants passed"
+  },
+  "ciGate": "downstream failure because required matrix jobs failed, not a separate test defect",
+  "ours": "No introduced source defect identified by the independent ClawSweeper review; current-head real startup/navigation and cleanup cases pass",
+  "upstreamCiStillRed": true,
+  "manualRerunOrReviewCommentRequested": false
+}

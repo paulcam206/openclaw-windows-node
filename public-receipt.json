@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "8c3726341c5562884a7b5d7dfb52809b77661d21",
+  "buildKind": "Windows x64 source Debug, isolated private desktop",
+  "observed": "Unsupported optional tray construction logged; actual Connection Hub rendered",
+  "actualConnectionPageMarker": true,
+  "captureKind": "Owned-window PrintWindow capture; shared input desktop was not switched",
+  "appSha256": "2B6C3384760B974AA8C7F3153795BBC05F13F7EF677644648EFBF95F5802ACF3",
+  "screenshotSha256": "D8B515AC3CCD44120CD12EA067DF0A705EC12972D58D485A3C864D3DC5F82371",
+  "liveGatewayUsed": false,
+  "installedCompanionUsed": false,
+  "syntheticGatewayUsed": false,
+  "isolatedLoopbackMcpConfigured": true,
+  "nodeModeEnabled": false
+}

@@ -1,0 +1,5 @@
+[2026-10-20 14:32:42.916] Tray icon is unavailable on this desktop
+System.NotImplementedException: Not implemented
+SetShownInSwitchers failed.
+[2026-10-20 14:32:42.940] [ERROR] CRASH Tray icon is unavailable on this desktop: System.NotImplementedException: Not implemented
+SetShownInSwitchers failed.
