@@ -1,0 +1,6 @@
+Source: parent-authorized independent continuity baseline shared-full.trx (guard absent).
+Actual test: OpenClaw.Shared.Tests.GatewayFixtureProtocolTests.Interactive_ConcurrentDisconnectsLeaveServerUsable
+Actual outcome: Failed
+System.ObjectDisposedException : Cannot access a disposed object.
+Object name: 'System.Net.WebSockets.ClientWebSocket'.
+This is independent real socket evidence, not the deterministic injected-boundary regression.

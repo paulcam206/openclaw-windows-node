@@ -1,0 +1,31 @@
+{
+  "shared": {
+    "total": "4523",
+    "failed": "0",
+    "command": "dotnet test .\\tests\\OpenClaw.Shared.Tests\\OpenClaw.Shared.Tests.csproj --no-restore -m:1 -nr:false",
+    "skipped": "35",
+    "passed": "4488"
+  },
+  "affectedFiles": [
+    "tests/OpenClaw.Shared.Tests/GatewayFixtureInteractiveTests.cs"
+  ],
+  "head": "f560ab37b08562bc234130e2c678c365301dd6c4",
+  "testSourceBlob": "85c36c0795bc8f5a51688a03a357f78b4cdb6c68",
+  "limitation": "The external ObjectDisposedException is injected after real loopback authentication. This proves the actual receive/read/dispose exception policy, not that the platform always throws ObjectDisposedException. Full validation ran before the local commit against identical final source; focused proof reran after commit. Retained runner desktop report lacks head/count fields; this receipt supplements it using git and actual TRX counters.",
+  "build": {
+    "oneNode": true,
+    "command": ".\\build.ps1 -NoTrustRepository",
+    "msbuildServer": false,
+    "exitCode": 0
+  },
+  "tray": {
+    "total": "4304",
+    "completedUtc": "2026-10-20T21:39:16.6256466Z",
+    "phase": "completed",
+    "passed": "4304",
+    "failed": "0",
+    "actualDesktop": "owned private desktop",
+    "exitCode": 0,
+    "command": "dotnet test .\\tests\\OpenClaw.Tray.Tests\\OpenClaw.Tray.Tests.csproj --no-build --no-restore -m:1"
+  }
+}

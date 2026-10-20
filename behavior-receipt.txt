@@ -1,0 +1,21 @@
+Head: f560ab37b08562bc234130e2c678c365301dd6c4
+Test source blob: 85c36c0795bc8f5a51688a03a357f78b4cdb6c68
+Actual focused terminal diagnostics (committed head):
+Fixture receive proof: before cancellation injected ObjectDisposedException propagated unchanged through reader and disposal.
+Fixture receive proof: replacement authenticated and completed real loopback chat.
+Fixture receive proof: owned cancellation injected ObjectDisposedException; reader and disposal completed successfully.
+Fixture receive proof: replacement authenticated and completed real loopback chat.
+Test Run Successful.
+Total tests: 2
+     Passed: 2
+
+Actual guard-removed regression output (temporary local mutation, restored before final build):
+Fixture receive proof: before cancellation injected ObjectDisposedException propagated unchanged through reader and disposal.
+[xUnit.net 00:00:02.09]       System.ObjectDisposedException : Cannot access a disposed object.
+[xUnit.net 00:00:02.09]       Object name: 'synthetic-receive-boundary'.
+   System.ObjectDisposedException : Cannot access a disposed object.
+Object name: 'synthetic-receive-boundary'.
+Test Run Failed.
+Total tests: 2
+     Passed: 1
+     Failed: 1
