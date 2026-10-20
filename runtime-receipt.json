@@ -1,0 +1,98 @@
+{
+  "sourceHead": "e37970aa1660a3746d6e08e862f61f663311b87a",
+  "environment": "Windows x64, source probe and real shipped SDK on owned private desktops",
+  "sdk": "0.8.0, unmodified shipped executor",
+  "nativeSha256": "6049C64723AF1173C3739DC6CD6B2F33F6C021BB2832C4216233CBA7F71AEE9A",
+  "launcherSha256": "03AF4FC80F0E8C0ED039560DB1F98DD04FFA441FF52ACD26A7A6A49291B4549F",
+  "cases": [
+    {
+      "name": "negative-token",
+      "passed": true,
+      "exitCode": 1114,
+      "timedOut": false,
+      "durationMs": 367,
+      "containment": "mxc",
+      "ownedDesktopRemoved": true,
+      "child": {
+        "isAppContainer": true,
+        "integrity": "low",
+        "sameSessionAsCaller": true,
+        "win32kDisableFlags": 0,
+        "desktopWriteAllowed": false,
+        "user32Loaded": false,
+        "user32LoadError": 1114
+      }
+    },
+    {
+      "name": "negative-powershell",
+      "passed": true,
+      "exitCode": -1,
+      "timedOut": false,
+      "durationMs": 8308,
+      "containment": "mxc",
+      "ownedDesktopRemoved": true,
+      "controlledPowerShellMarkerObserved": false
+    },
+    {
+      "name": "fixed-token",
+      "passed": true,
+      "exitCode": 0,
+      "timedOut": false,
+      "durationMs": 305,
+      "containment": "mxc",
+      "ownedDesktopRemoved": true,
+      "child": {
+        "isAppContainer": true,
+        "integrity": "low",
+        "sameSessionAsCaller": true,
+        "win32kDisableFlags": 0,
+        "desktopWriteAllowed": true,
+        "user32Loaded": true,
+        "user32LoadError": 0
+      }
+    },
+    {
+      "name": "fixed-powershell",
+      "passed": true,
+      "exitCode": 0,
+      "timedOut": false,
+      "durationMs": 1177,
+      "containment": "mxc",
+      "ownedDesktopRemoved": true,
+      "controlledPowerShellMarkerObserved": true
+    }
+  ],
+  "ownershipAndCallerEnvironment": {
+    "completedUtc": "2026-10-20T15:20:10.7077392-07:00",
+    "exactNameRejectedBeforeLaunch": true,
+    "realLaunchFailureEnvironmentRestored": true,
+    "successEnvironmentRestored": true,
+    "unsetVariablePreserved": true,
+    "childInheritedIntendedOverrides": true,
+    "actualChildAvoidedLiveContender": true,
+    "contenderSecurityUnchanged": true,
+    "ownedDesktopsRemoved": true
+  },
+  "requiredValidation": [
+    {
+      "name": "shared-full",
+      "passed": 4486,
+      "skipped": 35,
+      "failed": 0
+    },
+    {
+      "name": "tray-full",
+      "passed": 4304,
+      "skipped": 0,
+      "failed": 0
+    }
+  ],
+  "fullBuild": "passed",
+  "docs": "passed",
+  "installedHubOrGatewayUsed": false,
+  "liveGatewayUsed": false,
+  "syntheticGatewayUsed": false,
+  "productPolicyChanged": false,
+  "timeoutInferenceAdded": false,
+  "note": "Private identities, exact desktop names, local paths and endpoints are omitted. Runtime result fields are copied from actual captured probe output."
+}
