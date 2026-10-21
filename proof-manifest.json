@@ -1,0 +1,202 @@
+[
+  {
+    "head": "fed3ec72294497568756fcbf50ca9888f156e45e",
+    "attempt": 1,
+    "qualification": "Real normal application entry, owned HWND PrintWindow. No fixture or preview mode. Real validation error with no credentials.",
+    "captureMethod": "PrintWindow(PW_RENDERFULLCONTENT), exact app PID/window only, no screen/desktop capture",
+    "sourceAppProcessId": 53640,
+    "sourceAppProcessStartUtc": "2026-10-21T21:39:22.4881870Z",
+    "sourceAppSha256": "416C7787B1733E94D37AD240FE45EC0A5240D0F2E05B124A785EC8FE6DBFE955",
+    "imageWidth": 1080,
+    "imageHeight": 960,
+    "errorBottom": 799,
+    "navigationTop": 865,
+    "visibleGapPixels": 66,
+    "controls": [
+      {
+        "automationId": "ResultBar",
+        "name": "",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 120,
+          "top": 719,
+          "width": 840,
+          "height": 80
+        }
+      },
+      {
+        "automationId": "Message",
+        "name": "Enter a setup code or shared token for this gateway.",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 191,
+          "top": 742,
+          "width": 483,
+          "height": 27
+        }
+      },
+      {
+        "automationId": "BackButton",
+        "name": "Back",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 71,
+          "top": 865,
+          "width": 225,
+          "height": 48
+        }
+      },
+      {
+        "automationId": "CheckButton",
+        "name": "Check connection",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 546,
+          "top": 865,
+          "width": 225,
+          "height": 48
+        }
+      },
+      {
+        "automationId": "NextButton",
+        "name": "Next",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 782,
+          "top": 865,
+          "width": 226,
+          "height": 48
+        }
+      }
+    ],
+    "redactions": [
+      {
+        "control": "AddressInput",
+        "pixelRectangle": [
+          698,
+          505,
+          946,
+          578
+        ]
+      },
+      {
+        "control": "CodeInput",
+        "pixelRectangle": [
+          826,
+          619,
+          946,
+          692
+        ]
+      }
+    ],
+    "rawImageSha256": "addbefa6a9de99fda546e934875e843e4d65ae55718c80e4499ad55dd6a7edf9",
+    "publicImageSha256": "ad27d11e0185ab1a1906ca9feada878fc1ff12bb7a25c646039717224eb37965",
+    "exactSourceAppExited": true,
+    "cleanupFinishedUtc": "2026-10-21T21:39:37.4729583Z"
+  },
+  {
+    "head": "fed3ec72294497568756fcbf50ca9888f156e45e",
+    "attempt": 2,
+    "qualification": "Real normal application entry, owned HWND PrintWindow. No fixture or preview mode. Real validation error with no credentials.",
+    "captureMethod": "PrintWindow(PW_RENDERFULLCONTENT), exact app PID/window only, no screen/desktop capture",
+    "sourceAppProcessId": 53640,
+    "sourceAppProcessStartUtc": "2026-10-21T21:39:22.4881870Z",
+    "sourceAppSha256": "416C7787B1733E94D37AD240FE45EC0A5240D0F2E05B124A785EC8FE6DBFE955",
+    "imageWidth": 1080,
+    "imageHeight": 960,
+    "errorBottom": 799,
+    "navigationTop": 865,
+    "visibleGapPixels": 66,
+    "controls": [
+      {
+        "automationId": "ResultBar",
+        "name": "",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 120,
+          "top": 719,
+          "width": 840,
+          "height": 80
+        }
+      },
+      {
+        "automationId": "Message",
+        "name": "Enter a setup code or shared token for this gateway.",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 191,
+          "top": 742,
+          "width": 483,
+          "height": 27
+        }
+      },
+      {
+        "automationId": "BackButton",
+        "name": "Back",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 71,
+          "top": 865,
+          "width": 225,
+          "height": 48
+        }
+      },
+      {
+        "automationId": "CheckButton",
+        "name": "Check connection",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 546,
+          "top": 865,
+          "width": 225,
+          "height": 48
+        }
+      },
+      {
+        "automationId": "NextButton",
+        "name": "Next",
+        "enabled": true,
+        "offscreen": false,
+        "windowRelativeBounds": {
+          "left": 782,
+          "top": 865,
+          "width": 226,
+          "height": 48
+        }
+      }
+    ],
+    "redactions": [
+      {
+        "control": "AddressInput",
+        "pixelRectangle": [
+          698,
+          505,
+          946,
+          578
+        ]
+      },
+      {
+        "control": "CodeInput",
+        "pixelRectangle": [
+          826,
+          619,
+          946,
+          692
+        ]
+      }
+    ],
+    "rawImageSha256": "eb5eb5fda1f3051d0f32ce2cf89ba9ae676c98603eefe9279639f093e6bcc1e8",
+    "publicImageSha256": "199be22adc19fbbcbd50ee0069512cd1f743c55da4f8988d85701920471f7941",
+    "exactSourceAppExited": true,
+    "cleanupFinishedUtc": "2026-10-21T21:39:37.4729583Z"
+  }
+]
