@@ -1,0 +1,73 @@
+{
+  "binary": {
+    "expectedHead": "182aee9334edacb5291b7b13a8ee43deb5fb4b92",
+    "version": "2026.10.5-draft-hub-continuity.1+108.Branch.draft-hub-continuity.Sha.182aee9334edacb5291b7b13a8ee43deb5fb4b92.182aee9334edacb5291b7b13a8ee43deb5fb4b92",
+    "processId": 29172,
+    "processStartUtc": "2026-10-21T22:35:19.4072086Z",
+    "desktop": "Default",
+    "appSha256": "F9BA32AF8965E2DD892944DC5BA441CEB3288278348E834D2540BF8EC0115CDC"
+  },
+  "qualification": "Independent182 on Default with owned loopback Gateway fixture. Not combined preflight, real provider, pairing or MXC proof.",
+  "before": {
+    "recordedUtc": "2026-10-21T22:35:26.5208239+00:00",
+    "processId": 29172,
+    "assistantSelectorEnabled": true,
+    "selectedAssistant": [
+      {
+        "id": "WorkspaceAgent:research",
+        "name": "Fixture Research, research"
+      }
+    ],
+    "conversation": "Fixture: research conversation",
+    "conversationSelected": true
+  },
+  "roster-pending": {
+    "recordedUtc": "2026-10-21T22:35:28.508839+00:00",
+    "processId": 29172,
+    "assistantSelectorEnabled": false,
+    "selectedAssistant": [],
+    "conversation": null,
+    "conversationSelected": false
+  },
+  "after-reconnect": {
+    "recordedUtc": "2026-10-21T22:35:28.6426005+00:00",
+    "processId": 29172,
+    "assistantSelectorEnabled": true,
+    "selectedAssistant": [
+      {
+        "id": "WorkspaceAgent:research",
+        "name": "Fixture Research, research"
+      }
+    ],
+    "conversation": "Fixture: research conversation",
+    "conversationSelected": true
+  },
+  "ordinary-send": {
+    "Method": "chat.send",
+    "SessionKey": "agent:research:fixture-other",
+    "Outcome": "ok",
+    "origin": "Native composer ValuePattern and primary Invoke. No app.chat.send call or explicit send-thread override."
+  },
+  "ordinary-send-readback": {
+    "requestedThreadId": "agent:research:fixture-other",
+    "turnActive": true
+  },
+  "after-send": {
+    "recordedUtc": "2026-10-21T22:35:29.8146461+00:00",
+    "processId": 29172,
+    "assistantSelectorEnabled": true,
+    "selectedAssistant": [
+      {
+        "id": "WorkspaceAgent:research",
+        "name": "Fixture Research, research"
+      }
+    ],
+    "conversation": "Fixture: research conversation",
+    "conversationSelected": true
+  },
+  "cleanup": {
+    "processId": 29172,
+    "originalProcessExited": true,
+    "completedUtc": "2026-10-21T22:35:30.5526281+00:00"
+  }
+}

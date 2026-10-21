@@ -1,0 +1,62 @@
+{
+  "head": "182aee9334edacb5291b7b13a8ee43deb5fb4b92",
+  "images": [
+    {
+      "name": "before-reconnect",
+      "width": 1791,
+      "height": 2121,
+      "rawSha256": "d54594adac8acaaa8c116bfc8ed12b43010f1ca9ec600946c09b71de295d050a",
+      "publicSha256": "1cedcddbeeb122c6dea0a66390bf5c5ab0b8688000325a964e56206974e880ad",
+      "metadataRemoved": [
+        "dpi",
+        "gamma",
+        "srgb"
+      ],
+      "pixelDataUnchanged": true,
+      "redactionReview": "Only synthetic fixture content is visible. No endpoint, credential, phone number or real user data is present; no pixel mask required."
+    },
+    {
+      "name": "after-reconnect",
+      "width": 1791,
+      "height": 2121,
+      "rawSha256": "453403eb4e1774d1b09276be3d8871e60ed2bee4814892ada902fccdc43d54c1",
+      "publicSha256": "ab4e4122164d7eaf859ad435d20cd3973d905ae957c163de97f5f93404d0b934",
+      "metadataRemoved": [
+        "dpi",
+        "gamma",
+        "srgb"
+      ],
+      "pixelDataUnchanged": true,
+      "redactionReview": "Only synthetic fixture content is visible. No endpoint, credential, phone number or real user data is present; no pixel mask required."
+    },
+    {
+      "name": "ordinary-send-reply",
+      "width": 1791,
+      "height": 2121,
+      "rawSha256": "a85cf77f5335f17aca5991081814ee7af5eacbd29846d1fc7b085035e5b2d373",
+      "publicSha256": "1a69195dfedf8fee6b20b50e441b9dd7f6bd144b36e3efc74466776662192e4d",
+      "metadataRemoved": [
+        "dpi",
+        "gamma",
+        "srgb"
+      ],
+      "pixelDataUnchanged": true,
+      "redactionReview": "Only synthetic fixture content is visible. No endpoint, credential, phone number or real user data is present; no pixel mask required."
+    }
+  ],
+  "outcome": {
+    "outcome": "passed",
+    "actualHead": "182aee9334edacb5291b7b13a8ee43deb5fb4b92",
+    "mode": "standalone real desktop",
+    "nativeSendSessionKey": "agent:research:fixture-other",
+    "selectedAgent": "WorkspaceAgent:research",
+    "selectedConversation": "Fixture: research conversation",
+    "gatewayData": "Owned synthetic loopback fixture; no provider contacted.",
+    "completedUtc": "2026-10-21T22:35:30.4286732+00:00"
+  },
+  "cleanup": {
+    "processId": 29172,
+    "originalProcessExited": true,
+    "completedUtc": "2026-10-21T22:35:30.5526281+00:00"
+  }
+}
