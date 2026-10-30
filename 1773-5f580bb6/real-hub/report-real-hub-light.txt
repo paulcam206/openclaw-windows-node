@@ -1,0 +1,11 @@
+chat loaded: True
+real-hub-light-01-initial.png printwindow=True 1000x740
+uia: found 'Sources and evidence' type=button
+uia: state before = Collapsed
+uia: state after Expand = Expanded
+real-hub-light-02-sources-expanded-nested-open.png printwindow=True 1000x740
+uia: second disclosure before = Collapsed
+uia: second disclosure after Expand = Expanded
+real-hub-light-03-all-expanded.png printwindow=True 1000x740
+uia: after Collapse both = Collapsed/Collapsed
+real-hub-light-04-recollapsed.png printwindow=True 1000x740
