@@ -1,0 +1,6 @@
+[
+  "Summarize the gateway isolation findings and show the evidence.",
+  "Here is the summary. The evidence is folded below.\n\n<details><summary>Sources and evidence</summary>\n\nPaths below are relative to the package:\n\n- `app\\dist\\extensions\\gateway-isolation\\plugin.json`: plugin purpose and default activation.\n- **Further evidence** from the next block.\n\n```text\nliteral <details> and </summary> stay literal in code\nsecond literal line\n```\n\n<details open><summary>Nested evidence (starts open)</summary>\n\nNested body with a list:\n\n1. First nested item\n2. Second nested item\n\n</details>\n\n</details>\n\n<details><summary>Raw command output</summary>\n\n```powershell\nGet-ChildItem app\\dist | Select-Object -First 3\n```\n\n</details>\n\nThat is all the evidence.",
+  "Thanks. Is there anything else?",
+  "A normal message for contrast: no disclosure here, just **plain Markdown**.\n\n- first point\n- second point"
+]

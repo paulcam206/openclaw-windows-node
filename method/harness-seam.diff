@@ -1,0 +1,26 @@
+diff --git a/tests/OpenClaw.GatewayFixtureHost/GatewayFixtureProfile.cs b/tests/OpenClaw.GatewayFixtureHost/GatewayFixtureProfile.cs
+index 3de95bca..12630854 100644
+--- a/tests/OpenClaw.GatewayFixtureHost/GatewayFixtureProfile.cs
++++ b/tests/OpenClaw.GatewayFixtureHost/GatewayFixtureProfile.cs
+@@ -64,7 +64,7 @@ public sealed class GatewayFixtureProfile : IDisposable
+                 VoiceAudioFeedback = false,
+                 UseLegacyWebChat = false,
+                 ShowCompletedSessions = true,
+-                AppTheme = "Light",
++                AppTheme = Environment.GetEnvironmentVariable("OPENCLAW_PROOF_THEME") ?? "Light",
+                 OpenTelemetryEndpoint = null
+             };
+             File.WriteAllText(Path.Combine(DataDirectory, "settings.json"), settings.ToJson());
+diff --git a/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs b/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs
+index 9d5121fb..73153492 100644
+--- a/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs
++++ b/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs
+@@ -164,7 +164,7 @@ public sealed partial class GatewayScenario
+         Session[] sessions =
+         [
+             CreateSession(MainSessionKey, MainTitle, "main", "browse", 0,
+-                ["Can we browse the synthetic Gateway?", MainSentinel]),
++                Environment.GetEnvironmentVariable("OPENCLAW_PROOF_MAIN_TRANSCRIPT") is { Length: > 0 } proofPath ? JsonSerializer.Deserialize<string[]>(File.ReadAllText(proofPath))! : ["Can we browse the synthetic Gateway?", MainSentinel]),
+             CreateSession(LongSessionKey, LongTitle, "main", "browse", 1,
+                 Enumerable.Range(1, LongMessageCount).Select(LongMessage).ToArray()),
+             CreateSession(OtherSessionKey, OtherTitle, "research", "worker", 2,

@@ -1,0 +1,50 @@
+{
+  "RunId": "6c82537ac0e2411ab09c10ffd6ac68e9",
+  "AppProcessId": 8896,
+  "hwnd": "0x2D02CC",
+  "capturedAtUtc": "2026-10-30T01:20:50.5051494+00:00",
+  "bounds": {
+    "Location": {
+      "IsEmpty": false,
+      "X": 78,
+      "Y": 78
+    },
+    "Size": {
+      "IsEmpty": false,
+      "Width": 1044,
+      "Height": 788
+    },
+    "X": 78,
+    "Y": 78,
+    "Width": 1044,
+    "Height": 788,
+    "Left": 78,
+    "Top": 78,
+    "Right": 1122,
+    "Bottom": 866,
+    "IsEmpty": false
+  },
+  "sampledContentColors": 97,
+  "sha256": "D5F7205E8655C65FDA7D10125C8416D2C910E75D85229BED0A64270E1F24ED40",
+  "assertions": [
+    {
+      "AutomationId": "WorkspaceAssistantSelector",
+      "Name": "Assistant",
+      "IsEnabled": true,
+      "left": 8,
+      "top": 85,
+      "Width": 256,
+      "Height": 64
+    },
+    {
+      "AutomationId": "WorkspaceSessionsAdd",
+      "Name": "New conversation",
+      "IsEnabled": true,
+      "left": 220,
+      "top": 195,
+      "Width": 40,
+      "Height": 36
+    }
+  ],
+  "method": "PrintWindow(PW_RENDERFULLCONTENT); owned HWND only; synthetic Gateway"
+}
