@@ -1,0 +1,5 @@
+windowsappruntime exit=0
+appruntime=Microsoft.WindowsAppRuntime.2_2.2.0.0_x64__8wekyb3d8bbwe,Microsoft.WindowsAppRuntime.2_2.6.5.0_x64__8wekyb3d8bbwe,Microsoft.WindowsAppRuntime.2_2.6.5.0_x86__8wekyb3d8bbwe,Microsoft.WindowsAppRuntime.2_2.6.4.0_x64__8wekyb3d8bbwe
+main=MicrosoftCorporationII.WinAppRuntime.Main.2_2.6.4.0_x64__8wekyb3d8bbwe
+identity head=032965b2305bc7a61ce788a0a9461deac8935d94 tree=2f98f6123b77eb6e2caa872683344eb497559c45 session=1
+app sha256=291CF2A562126A3EA202E153AD5DDBF3A25FBF2F992955512BF34B180C409B63 version=2026.10.9-paulcam206-markdown-details-disclosures.1+26.Branch.paulcam206-markdown-details-disclosures.Sha.032965b2305bc7a61ce788a0a9461deac8935d94.032965b2305bc7a61ce788a0a9461deac8935d94
