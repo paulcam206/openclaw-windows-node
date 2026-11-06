@@ -1,0 +1,29 @@
+chat loaded: True
+pr-light-01-initial.png printwindow=True 1000x740
+uia: found 'Sources and evidence' type=button
+uia: state before = Collapsed
+uia: state after Expand = Expanded
+pr-light-02-sources-expanded-nested-open.png printwindow=True 1000x740
+uia: second disclosure before = Collapsed
+uia: second disclosure after Expand = Expanded
+pr-light-03-all-expanded.png printwindow=True 1000x740
+uia: after Collapse both = Collapsed/Collapsed
+pr-light-04-recollapsed.png printwindow=True 1000x740
+uia: incomplete section literal text present = True
+uia: element named like 'First body' = group 'Assistant: <details><summary>First
+
+First body
+
+</details>
+
+<details><summary>Second</summary>
+
+Second body
+
+</details>'
+uia: found 'Second' type=button
+uia: 'Second' before = Collapsed
+uia: 'Second' after Expand = Expanded
+pr-light-05-incomplete-then-valid.png printwindow=True 1000x740
+uia: timeline scrolled to top (vertical percent 36.2 -> 0)
+pr-light-06-top.png printwindow=True 1000x740

@@ -1,0 +1,15 @@
+{
+  "label": "pr-light",
+  "theme": "Light",
+  "startedAtUtc": "2026-11-06T03:30:06.9899689Z",
+  "appExe": "C:\\v\\p1773\\src\\OpenClaw.Tray.WinUI\\bin\\Debug\\net10.0-windows10.0.22621.0\\win-x64\\OpenClaw.Tray.WinUI.exe",
+  "appPid": 13040,
+  "profile": "C:\\Users\\crabbox\\AppData\\Local\\Temp\\openclaw-gateway-fixture-5f468af3\\profile",
+  "hostDll": "C:\\v\\p1773-harness\\tests\\OpenClaw.GatewayFixtureHost\\bin\\Debug\\net10.0\\OpenClaw.GatewayFixtureHost.dll",
+  "appSha256": "938BBB16E76B7335C8F802016C1C57B70C42808348C731E0E84E31D9F1D08CA8",
+  "commandLine": "dotnet \"C:\\v\\p1773-harness\\tests\\OpenClaw.GatewayFixtureHost\\bin\\Debug\\net10.0\\OpenClaw.GatewayFixtureHost.dll\" --app \"C:\\v\\p1773\\src\\OpenClaw.Tray.WinUI\\bin\\Debug\\net10.0-windows10.0.22621.0\\win-x64\\OpenClaw.Tray.WinUI.exe\" --artifacts \"C:\\v\\ev1773-final\\real-hub\\host-artifacts-pr-light\" --duration-seconds 240",
+  "env": {
+    "OPENCLAW_PROOF_MAIN_TRANSCRIPT": "C:\\v\\in\\canned-transcript.json",
+    "OPENCLAW_PROOF_THEME": "Light"
+  }
+}
