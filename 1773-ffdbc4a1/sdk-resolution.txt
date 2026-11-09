@@ -1,0 +1,5 @@
+Microsoft.UI.Xaml.dll file=3.3.0.0 (4F2267338B14(ContainerAdministrator)-ac3d7a70b113e6cb21c626bd6c765f4bfd4ae6a6) product=3.0
+Microsoft.WindowsAppRuntime.dll file=2.6 product=2.6
+Microsoft.WindowsAppRuntime.Bootstrap.dll file=2.6 product=2.6
+C:\v\p1773\src\OpenClaw.Tray.WinUI\obj\project.assets.json -> Microsoft.WindowsAppSDK/2.6.5, Microsoft.WindowsAppSDK.Base/2.6.5, Microsoft.WindowsAppSDK.Foundation/2.6.5, Microsoft.WindowsAppSDK.WinUI/2.6.5
+C:\v\p1773\tests\OpenClaw.Tray.UITests\obj\project.assets.json -> Microsoft.WindowsAppSDK/2.6.5, Microsoft.WindowsAppSDK.Base/2.6.5, Microsoft.WindowsAppSDK.Foundation/2.6.5, Microsoft.WindowsAppSDK.WinUI/2.6.5

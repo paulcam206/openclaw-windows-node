@@ -1,0 +1,88 @@
+pin ok C:\v\p1773 head=ffdbc4a1286ab2e657e8bc50b26bfa2c69f58571 tree=0c6bda57e06f7a6bdb8309c99a0ab1895b977b4c
+TRX \Markdown\37cef20e32ec4472bb5a1e32d7435795\markdown-disclosure.trx outcome=Completed total=2 executed=2 passed=2 failed=0 notExecuted=0 error=0
+TRX \Markdown-visual\d658a0e4f56945418b0fa4fcb08cd6d9\markdown-disclosure-visual.trx outcome=Completed total=4 executed=4 passed=4 failed=0 notExecuted=0 error=0
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.WinUI.exe sha256=ED5248EAE2D9385BEE4B940FA252FAF2C321790EEDBD43F77FBD4CE29DFD097D size=394240 mtime=2026-11-09T20:32:08.4244506Z version=2026.11.2-paulcam206-markdown-details-disclosures.1+36.Branch.paulcam206-markdown-details-disclosures.Sha.ffdbc4a1286ab2e657e8bc50b26bfa2c69f58571.ffdbc4a1286ab2e657e8bc50b26bfa2c69f58571
+C:\v\p1773-harness\tests\OpenClaw.GatewayFixtureHost\bin\Debug\net10.0\OpenClaw.GatewayFixtureHost.dll sha256=E0A72C09CB3F518F616534AB0A455E88F5346B5021FF207DFB0498D89CF52B71 size=89600 mtime=2026-11-09T20:39:55.4050203Z version=1.0.0+ffdbc4a1286ab2e657e8bc50b26bfa2c69f58571
+C:\v\p1773\tests\OpenClaw.Tray.UITests\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.UITests.dll sha256=BAF52788B36711884B4879D20BB9C673DE28E4A278E1FD9C58E8F39B66F09144 size=2958336 mtime=2026-11-09T20:32:36.6507588Z version=1.0.0+ffdbc4a1286ab2e657e8bc50b26bfa2c69f58571
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.UI.Xaml.dll sha256=BA728EC8E18E86577581AC611B7379AD08F69D47898F0ADA0F1536F4313A9758 size=15191352 mtime=2026-10-31T15:15:00.0000000Z version=3.0
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.WindowsAppRuntime.dll sha256=D1EC4DD47EC6F1070C8BCA1A4BEFD85AAF1EF1C455234447B78046CD28D8E9A4 size=2639672 mtime=2026-10-31T08:58:56.0000000Z version=2.6
+C:\v\p1773\tests\OpenClaw.Tray.UITests\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.UI.Xaml.dll sha256=BA728EC8E18E86577581AC611B7379AD08F69D47898F0ADA0F1536F4313A9758 size=15191352 mtime=2026-10-31T15:15:00.0000000Z version=3.0
+C:\v\p1773\tests\OpenClaw.Tray.UITests\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.WindowsAppRuntime.dll sha256=D1EC4DD47EC6F1070C8BCA1A4BEFD85AAF1EF1C455234447B78046CD28D8E9A4 size=2639672 mtime=2026-10-31T08:58:56.0000000Z version=2.6
+== report-pr-dark.txt
+chat loaded: True
+pr-dark-01-initial.png printwindow=True 1000x740
+uia: found 'Sources and evidence' type=button
+uia: state before = Collapsed
+uia: state after Expand = Expanded
+pr-dark-02-sources-expanded-nested-open.png printwindow=True 1000x740
+uia: second disclosure before = Collapsed
+uia: second disclosure after Expand = Expanded
+pr-dark-03-all-expanded.png printwindow=True 1000x740
+uia: after Collapse both = Collapsed/Collapsed
+pr-dark-04-recollapsed.png printwindow=True 1000x740
+uia: incomplete section literal text present = True
+uia: element named like 'First body' = group 'Fixture Main: <details><summary>First
+
+First body
+
+</details>
+
+<details><summary>Second</summary>
+
+Second body
+
+</details>'
+uia: found 'Second' type=button
+uia: 'Second' before = Collapsed
+uia: 'Second' after Expand = Expanded
+pr-dark-05-incomplete-then-valid.png printwindow=True 1000x740
+uia: timeline scrolled to top (vertical percent 36.2 -> 0)
+pr-dark-06-top.png printwindow=True 1000x740
+== report-pr-light.txt
+chat loaded: True
+pr-light-01-initial.png printwindow=True 1000x740
+uia: found 'Sources and evidence' type=button
+uia: state before = Collapsed
+uia: state after Expand = Expanded
+pr-light-02-sources-expanded-nested-open.png printwindow=True 1000x740
+uia: second disclosure before = Collapsed
+uia: second disclosure after Expand = Expanded
+pr-light-03-all-expanded.png printwindow=True 1000x740
+uia: after Collapse both = Collapsed/Collapsed
+pr-light-04-recollapsed.png printwindow=True 1000x740
+uia: incomplete section literal text present = True
+uia: element named like 'First body' = group 'Fixture Main: <details><summary>First
+
+First body
+
+</details>
+
+<details><summary>Second</summary>
+
+Second body
+
+</details>'
+uia: found 'Second' type=button
+uia: 'Second' before = Collapsed
+uia: 'Second' after Expand = Expanded
+pr-light-05-incomplete-then-valid.png printwindow=True 1000x740
+uia: timeline scrolled to top (vertical percent 36.2 -> 0)
+pr-light-06-top.png printwindow=True 1000x740
+png \real-hub\pr-dark-01-initial.png 37304
+png \real-hub\pr-dark-02-sources-expanded-nested-open.png 41027
+png \real-hub\pr-dark-03-all-expanded.png 41160
+png \real-hub\pr-dark-04-recollapsed.png 38208
+png \real-hub\pr-dark-05-incomplete-then-valid.png 35171
+png \real-hub\pr-dark-06-top.png 38797
+png \real-hub\pr-light-01-initial.png 37319
+png \real-hub\pr-light-02-sources-expanded-nested-open.png 41568
+png \real-hub\pr-light-03-all-expanded.png 41342
+png \real-hub\pr-light-04-recollapsed.png 37499
+png \real-hub\pr-light-05-incomplete-then-valid.png 34849
+png \real-hub\pr-light-06-top.png 38014
+png \visual\MarkdownDisclosure-Dark\capture-00.png 20837
+png \visual\MarkdownDisclosure-HighContrast\capture-00.png 19480
+png \visual\MarkdownDisclosure-Light\capture-00.png 19298
+png \visual\MarkdownDisclosureCollapsed-Dark\capture-00.png 5353
+png \visual\MarkdownDisclosureCollapsed-HighContrast\capture-00.png 5213
+png \visual\MarkdownDisclosureCollapsed-Light\capture-00.png 5209

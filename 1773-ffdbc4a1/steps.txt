@@ -1,0 +1,10 @@
+{"step":"checkout","exit":0,"threw":null,"seconds":16,"ended":"2026-11-09T12:21:19.0471300-08:00"}
+{"step":"windowsappruntime","exit":0,"threw":null,"seconds":33,"ended":"2026-11-09T12:21:52.4950973-08:00"}
+{"step":"build","exit":0,"threw":null,"seconds":451,"ended":"2026-11-09T12:29:23.9701424-08:00"}
+{"step":"lane-uitests-build","exit":0,"threw":null,"seconds":206,"ended":"2026-11-09T12:32:49.7614736-08:00"}
+{"step":"lane-native-markdown","exit":0,"threw":null,"seconds":176,"ended":"2026-11-09T12:35:46.3465079-08:00"}
+{"step":"lane-native-markdown-visual","exit":0,"threw":null,"seconds":141,"ended":"2026-11-09T12:38:07.7374537-08:00"}
+{"step":"harness-prepare","exit":0,"threw":null,"seconds":113,"ended":"2026-11-09T12:40:00.9843070-08:00"}
+{"step":"real-hub-light","exit":0,"threw":null,"seconds":52,"ended":"2026-11-09T12:40:53.5581735-08:00"}
+{"step":"real-hub-dark","exit":0,"threw":null,"seconds":33,"ended":"2026-11-09T12:41:27.0130246-08:00"}
+{"step":"summary","exit":0,"threw":null,"seconds":14,"ended":"2026-11-09T12:41:41.0759898-08:00"}
