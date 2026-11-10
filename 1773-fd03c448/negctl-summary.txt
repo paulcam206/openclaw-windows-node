@@ -1,0 +1,16 @@
+Test run for C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.UITests.dll (.NETCoreApp,Version=v10.0)
+[xUnit.net 00:00:03.68]       Assert.Equal() Failure: Values differ
+[xUnit.net 00:00:03.68]       Expected: See docs (https://example.invalid/docs)
+[xUnit.net 00:00:03.68]       Actual:   See [docs](<https://example.invalid/docs>)
+[xUnit.net 00:00:03.68]     OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.AssistantMarkdown_DisclosureFollowsTheChatLinkAndContentPolicy [FAIL]
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.AssistantMarkdown_DisclosureFollowsTheChatLinkAndContentPolicy [628 ms]
+   Assert.Equal() Failure: Values differ
+Expected: See docs (https://example.invalid/docs)
+Actual:   See [docs](<https://example.invalid/docs>)
+  Passed OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(theme: "Light") [720 ms]
+Test Run Failed.
+Total tests: 2
+     Passed: 1
+     Failed: 1
+  24 |  … Code -ne 0) { throw "Test command failed with exit code $ExitCode." }
+     | Test command failed with exit code 1.

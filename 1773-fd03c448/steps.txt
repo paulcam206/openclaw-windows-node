@@ -1,0 +1,22 @@
+{"step":"checkout","exit":0,"threw":null,"seconds":13,"ended":"2026-11-10T11:03:31.2056676-08:00"}
+{"step":"windowsappruntime","exit":0,"threw":null,"seconds":11,"ended":"2026-11-10T11:03:42.1152879-08:00"}
+{"step":"build","exit":0,"threw":null,"seconds":805,"ended":"2026-11-10T11:17:06.8870299-08:00"}
+{"step":"build-shared-tests","exit":0,"threw":null,"seconds":17,"ended":"2026-11-10T11:17:24.4006679-08:00"}
+{"step":"build-tray-tests","exit":0,"threw":null,"seconds":16,"ended":"2026-11-10T11:17:40.3300648-08:00"}
+{"step":"test-shared","exit":0,"threw":null,"seconds":517,"ended":"2026-11-10T11:26:20.1357865-08:00"}
+{"step":"test-tray","exit":0,"threw":null,"seconds":184,"ended":"2026-11-10T11:29:24.7990583-08:00"}
+{"step":"validate-docs","exit":0,"threw":null,"seconds":15,"ended":"2026-11-10T11:29:40.1304195-08:00"}
+{"step":"ci-workflow-contract","exit":0,"threw":null,"seconds":65,"ended":"2026-11-10T11:30:45.5113287-08:00"}
+{"step":"ci-ui-profile","exit":0,"threw":null,"seconds":3,"ended":"2026-11-10T11:30:48.3516539-08:00"}
+{"step":"diff-check","exit":0,"threw":null,"seconds":0,"ended":"2026-11-10T11:30:48.8308276-08:00"}
+{"step":"lane-parser","exit":0,"threw":null,"seconds":26,"ended":"2026-11-10T11:31:14.5113071-08:00"}
+{"step":"lane-uitests-build","exit":0,"threw":null,"seconds":248,"ended":"2026-11-10T11:35:22.3907734-08:00"}
+{"step":"lane-native-markdown","exit":0,"threw":null,"seconds":136,"ended":"2026-11-10T11:37:38.3196566-08:00"}
+{"step":"lane-native-markdown-visual","exit":0,"threw":null,"seconds":70,"ended":"2026-11-10T11:38:48.1842528-08:00"}
+{"step":"negctl-summary","exit":1,"threw":"Test command failed with exit code 1.","seconds":209,"ended":"2026-11-10T11:42:17.2116153-08:00"}
+{"step":"harness-prepare","exit":0,"threw":null,"seconds":21,"ended":"2026-11-10T11:42:38.2801560-08:00"}
+{"step":"real-hub-light","exit":0,"threw":null,"seconds":41,"ended":"2026-11-10T11:43:19.1165864-08:00"}
+{"step":"real-hub-dark","exit":0,"threw":null,"seconds":29,"ended":"2026-11-10T11:43:48.2765654-08:00"}
+{"step":"main-build","exit":0,"threw":null,"seconds":124,"ended":"2026-11-10T11:45:52.4817586-08:00"}
+{"step":"real-hub-main-light","exit":0,"threw":null,"seconds":22,"ended":"2026-11-10T11:46:15.0037797-08:00"}
+{"step":"summary","exit":0,"threw":null,"seconds":7,"ended":"2026-11-10T11:46:21.9958940-08:00"}
