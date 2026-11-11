@@ -1,0 +1,56 @@
+Negative controls on 6efff19a105d92a4d2215269dd12614f70bf5616, disposable clone C:\v\p1773-neg, never pushed.
+A: Disclosures stack at ChatVisuals.BlockGap; UnorderedList/OrderedList hooks removed.
+B: ThematicBreak hook removed; Markdown after a disclosure rendered as leading (renderMarkdown(text.Text, true)).
+The first attempt (negctl-rhythm.log) aborted at control A's expected disclosure failure because run-proof-tests.ps1 throws on a failing test; negctl-rhythm-2 catches it and runs both controls fully.
+
+TRX \negctl-a\a-webparity.trx outcome=Failed total=2 executed=2 passed=0 failed=2 notExecuted=0 error=0
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Dark")
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Light")
+TRX \negctl-a\e8d59e9b88ac4d63ad969b40197a09d7\a-disclosure.trx outcome=Failed total=2 executed=2 passed=1 failed=1 notExecuted=0 error=0
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(theme: "Light")
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(theme: "Light")
+TRX \negctl-b\b-webparity.trx outcome=Failed total=2 executed=2 passed=0 failed=2 notExecuted=0 error=0
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Light")
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Dark")
+TRX \negctl-b\26513ff9b98a46b2a8093e151814aa58\b-disclosure.trx outcome=Failed total=2 executed=2 passed=1 failed=1 notExecuted=0 error=0
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(theme: "Light")
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(theme: "Light") [505 ms]
+Expected: 14
+Actual:   8
+     at OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.<>c__DisplayClass4_1.<Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize>b__5() in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownDisclosureProofTests.cs:line 140
+   at OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(String theme) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownDisclosureProofTests.cs:line 118
+   at OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(String theme) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownDisclosureProofTests.cs:line 216
+negctl a disclosure exit=1 threw=Test command failed with exit code 1.
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Dark") [417 ms]
+Expected: 6
+Actual:   2
+     at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.<>c__DisplayClass5_2.<AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards>b__3() in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 154
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 93
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 232
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Light") [83 ms]
+Expected: 6
+Actual:   2
+     at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.<>c__DisplayClass5_2.<AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards>b__3() in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 154
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 93
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 232
+negctl a webparity exit=1
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(theme: "Light") [520 ms]
+Expected: 7
+Actual:   0
+     at OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.<>c__DisplayClass4_1.<Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize>b__5() in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownDisclosureProofTests.cs:line 146
+   at OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(String theme) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownDisclosureProofTests.cs:line 118
+   at OpenClaw.Tray.UITests.ReactorMarkdownDisclosureProofTests.Disclosure_ExpandsAccessiblyAndKeepsMarkdownStateOnRerenderAndResize(String theme) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownDisclosureProofTests.cs:line 216
+negctl b disclosure exit=1 threw=Test command failed with exit code 1.
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Dark") [418 ms]
+Expected: Raw
+Actual:   Content
+     at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.<>c__DisplayClass5_2.<AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards>b__3() in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 161
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 93
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 232
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Light") [31 ms]
+Expected: Raw
+Actual:   Content
+     at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.<>c__DisplayClass5_2.<AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards>b__3() in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 161
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 93
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 232
+negctl b webparity exit=1

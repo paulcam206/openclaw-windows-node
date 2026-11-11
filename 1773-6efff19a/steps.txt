@@ -1,0 +1,25 @@
+{"step":"checkout","exit":0,"threw":null,"seconds":3,"ended":"2026-11-11T12:03:41.3485719-08:00"}
+{"step":"windowsappruntime","exit":0,"threw":null,"seconds":2,"ended":"2026-11-11T12:03:43.7985525-08:00"}
+{"step":"build","exit":0,"threw":null,"seconds":159,"ended":"2026-11-11T12:06:22.4095662-08:00"}
+{"step":"build-shared-tests","exit":0,"threw":null,"seconds":11,"ended":"2026-11-11T12:06:33.8016104-08:00"}
+{"step":"build-tray-tests","exit":0,"threw":null,"seconds":13,"ended":"2026-11-11T12:06:46.4010820-08:00"}
+{"step":"test-shared","exit":0,"threw":null,"seconds":240,"ended":"2026-11-11T12:10:46.4872565-08:00"}
+{"step":"test-tray","exit":0,"threw":null,"seconds":145,"ended":"2026-11-11T12:13:11.9702207-08:00"}
+{"step":"validate-docs","exit":0,"threw":null,"seconds":5,"ended":"2026-11-11T12:13:16.9649603-08:00"}
+{"step":"ci-workflow-contract","exit":0,"threw":null,"seconds":39,"ended":"2026-11-11T12:13:55.8412315-08:00"}
+{"step":"ci-ui-profile","exit":0,"threw":null,"seconds":2,"ended":"2026-11-11T12:13:57.4619658-08:00"}
+{"step":"diff-check","exit":0,"threw":null,"seconds":0,"ended":"2026-11-11T12:13:57.5547753-08:00"}
+{"step":"lane-parser","exit":0,"threw":null,"seconds":3,"ended":"2026-11-11T12:14:00.5526163-08:00"}
+{"step":"lane-uitests-build","exit":0,"threw":null,"seconds":83,"ended":"2026-11-11T12:15:23.8909302-08:00"}
+{"step":"lane-native-markdown","exit":0,"threw":null,"seconds":76,"ended":"2026-11-11T12:16:39.6213312-08:00"}
+{"step":"lane-native-markdown-visual","exit":0,"threw":null,"seconds":77,"ended":"2026-11-11T12:17:56.1843954-08:00"}
+{"step":"lane-markdown-ui","exit":0,"threw":null,"seconds":5,"ended":"2026-11-11T12:18:01.2683863-08:00"}
+{"step":"negctl-rhythm","exit":0,"threw":"Test command failed with exit code 1.","seconds":193,"ended":"2026-11-11T12:21:14.3946063-08:00"}
+{"step":"harness-prepare","exit":0,"threw":null,"seconds":17,"ended":"2026-11-11T12:21:31.7507460-08:00"}
+{"step":"real-hub-light","exit":0,"threw":null,"seconds":37,"ended":"2026-11-11T12:22:09.1663441-08:00"}
+{"step":"real-hub-dark","exit":0,"threw":null,"seconds":27,"ended":"2026-11-11T12:22:35.9520839-08:00"}
+{"step":"main-build","exit":0,"threw":null,"seconds":117,"ended":"2026-11-11T12:24:33.1214980-08:00"}
+{"step":"real-hub-main-light","exit":0,"threw":null,"seconds":21,"ended":"2026-11-11T12:24:53.9858358-08:00"}
+{"step":"summary","exit":0,"threw":null,"seconds":8,"ended":"2026-11-11T12:25:01.6199202-08:00"}
+{"step":"negctl-rhythm-2","exit":0,"threw":null,"seconds":363,"ended":"2026-11-11T12:36:31.9775195-08:00"}
+{"step":"summary-negctl","exit":0,"threw":null,"seconds":4,"ended":"2026-11-11T12:36:36.4942792-08:00"}
