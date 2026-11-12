@@ -1,0 +1,156 @@
+pin ok C:\v\p1773 head=0abb30a457652952c73aa78ff33cee67b3329525 tree=226f73e69a5596d25e9d82ba4ba97adeb7aecbd0
+TRX \closeout\shared.trx outcome=Completed total=5876 executed=5847 passed=5847 failed=0 notExecuted=0 error=0
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.BuildConnectPayloadV2_HasCorrectFormat
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcCommandRunnerIntegrationTests.NativeSdk_DefaultPolicyStartsPowerShellWithoutOptIn
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcCommandRunnerIntegrationTests.NativeSdk_TempIsReadyForCreateRenameDeleteWithoutPayloadInitialization
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcCommandRunnerIntegrationTests.NativeSdk_NormalRootExitReapsBackgroundDescendant
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcRuntimeNamespaceNativeTests.NativeSdk_AncestorDenyAllowsOnlyExecutorIssuedCodeAndScratchChildren
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcCommandRunnerIntegrationTests.NativeSdk_DefaultEnvironmentProvidesTempWithoutInheritingParentProcessVariables
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcCommandRunnerIntegrationTests.NativeSdk_DeadlineRetainsStdoutAndStderr
+  NONPASS NotExecuted OpenClaw.Shared.Tests.SpeechToTextServiceLifetimeTests.ReloadDuringTranscription_FinishesTheCurrentResultBeforeReplacingTheFactory
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.StoreDeviceToken_PersistsAcrossReload
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.Initialize_LoadsExistingKeypair
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.BuildConnectPayloadV3_HasCorrectFormat
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.StoreDeviceTokenForRole_Node_PreservesOperatorToken
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.PublicKeyBase64Url_IsValidBase64Url
+  NONPASS NotExecuted OpenClaw.Shared.Tests.LocalInferenceHardwareProbeTests.ProbeReportsCudaMemoryWithoutADedicatedMemoryCap
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcCommandRunnerIntegrationTests.NativeSdk_UserFolderMatrixBlocksUngrantReadAndProtectedChildren
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.TryClearDeviceToken_PreservesNonTokenFields_AfterAtomicWrite
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.StoreDeviceToken_LeavesNoTempFileBehind
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.StoreDeviceTokenWithScopes_PersistsScopesAcrossReload
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.SignPayload_ThrowsBeforeInitialize
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcCommandRunnerIntegrationTests.NativeSdk_CapturesStdoutStderrAndNonzeroExit
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.ClearDeviceTokenIfMatches_OnlyRetiresTheExactRejectedToken
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.DifferentDirs_ProduceDifferentIdentities
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.SignPayload_DiffersForDifferentNonces
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.TryClearDeviceToken_LeavesNoTempFileBehind
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcRuntimeNamespaceNativeTests.NativeBuilder_TwoConcurrentOperationsCannotAccessSiblingRuntimeUnderBroadWriteGrant
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.Initialize_GeneratesNewKeypair
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.BuildDebugPayload_HasCorrectFormat
+  NONPASS NotExecuted OpenClaw.Shared.Tests.DeviceIdentityIntegrationTests.SignPayload_ProducesDeterministicSignature
+  NONPASS NotExecuted OpenClaw.Shared.Tests.Mxc.MxcRuntimeNamespaceNativeTests.NativeSdk_InlinePayloadControlExercisesTheSameNamespaceAssertions
+TRX \closeout\tray.trx outcome=Failed total=6372 executed=6372 passed=6371 failed=1 notExecuted=0 error=0
+  NONPASS Failed OpenClaw.Tray.Tests.OpenClawChatDataProviderTests.QueuedSend_RetryDriver_RejectsMissingScheduledWork(completesWithoutRearm: True)
+TRX \Markdown\9e879597051e47b4802f59e58ada90c6\markdown-disclosure.trx outcome=Completed total=2 executed=2 passed=2 failed=0 notExecuted=0 error=0
+TRX \markdown-ui\markdown-ui.trx outcome=Completed total=7 executed=7 passed=7 failed=0 notExecuted=0 error=0
+TRX \Markdown-visual\e2d1574b99b64548816ceedcaa5b6764\markdown-disclosure-visual.trx outcome=Completed total=4 executed=4 passed=4 failed=0 notExecuted=0 error=0
+TRX \negctl-c\c-webparity.trx outcome=Failed total=2 executed=2 passed=0 failed=2 notExecuted=0 error=0
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Light")
+  NONPASS Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Dark")
+TRX \parser\parser.trx outcome=Completed total=27 executed=27 passed=27 failed=0 notExecuted=0 error=0
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.WinUI.exe sha256=7DEED6F0C71CBD63FE182DF8B938AE9663709ADA70AB27977287A0BA1501A90C size=394240 mtime=2026-11-12T21:24:06.5813304Z version=2026.11.3-paulcam206-markdown-details-disclosures.1+70.Branch.paulcam206-markdown-details-disclosures.Sha.0abb30a457652952c73aa78ff33cee67b3329525.0abb30a457652952c73aa78ff33cee67b3329525
+C:\v\m1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.WinUI.exe sha256=178D99C92F37CE5F39D30ED3CD4C9D15ADB68B0EA26711EDF285D7FFC63E2085 size=393728 mtime=2026-11-12T21:30:35.6430267Z version=2026.11.3-alpha.16+Branch.main.Sha.3d5f14270dd6bd8b260a723ff2e73a68ea858ca8.3d5f14270dd6bd8b260a723ff2e73a68ea858ca8
+C:\v\p1773-harness\tests\OpenClaw.GatewayFixtureHost\bin\Debug\net10.0\OpenClaw.GatewayFixtureHost.dll sha256=FCA42CA6A98DDDB9FD9386964680C55F9DA804BA4FFC2B2660B920722B640BB0 size=113664 mtime=2026-11-12T21:27:14.8653973Z version=1.0.0+0abb30a457652952c73aa78ff33cee67b3329525
+C:\v\p1773\tests\OpenClaw.Tray.UITests\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.UITests.dll sha256=C974A44814D0043C1A059B9A5D3D71BEC675887C5BF4F4E5DCE7BF20F09CC76C size=5659648 mtime=2026-11-12T21:19:40.7635893Z version=1.0.0+0abb30a457652952c73aa78ff33cee67b3329525
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.UI.Xaml.dll sha256=BA728EC8E18E86577581AC611B7379AD08F69D47898F0ADA0F1536F4313A9758 size=15191352 mtime=2026-10-31T15:15:00.0000000Z version=3.0
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.WindowsAppRuntime.dll sha256=D1EC4DD47EC6F1070C8BCA1A4BEFD85AAF1EF1C455234447B78046CD28D8E9A4 size=2639672 mtime=2026-10-31T08:58:56.0000000Z version=2.6
+C:\v\p1773\src\OpenClaw.Tray.WinUI\obj\project.assets.json -> Microsoft.UI.Reactor/0.1.0-preview.17, Microsoft.UI.Reactor.Advanced/0.1.0-preview.17, Microsoft.WindowsAppSDK/2.6.5, Microsoft.WindowsAppSDK.AI/2.6.5, Microsoft.WindowsAppSDK.Base/2.6.5, Microsoft.WindowsAppSDK.DWrite/2.6.5, Microsoft.WindowsAppSDK.Foundation/2.6.5, Microsoft.WindowsAppSDK.InteractiveExperiences/2.6.5, Microsoft.WindowsAppSDK.ML/2.6.5, Microsoft.WindowsAppSDK.Runtime/2.6.5, Microsoft.WindowsAppSDK.Search/2.6.5, Microsoft.WindowsAppSDK.Widgets/2.6.5, Microsoft.WindowsAppSDK.WinUI/2.6.5
+C:\v\p1773\tests\OpenClaw.Tray.UITests\obj\project.assets.json -> Microsoft.UI.Reactor/0.1.0-preview.17, Microsoft.UI.Reactor.Advanced/0.1.0-preview.17, Microsoft.WindowsAppSDK/2.6.5, Microsoft.WindowsAppSDK.AI/2.6.5, Microsoft.WindowsAppSDK.Base/2.6.5, Microsoft.WindowsAppSDK.DWrite/2.6.5, Microsoft.WindowsAppSDK.Foundation/2.6.5, Microsoft.WindowsAppSDK.InteractiveExperiences/2.6.5, Microsoft.WindowsAppSDK.ML/2.6.5, Microsoft.WindowsAppSDK.Runtime/2.6.5, Microsoft.WindowsAppSDK.Search/2.6.5, Microsoft.WindowsAppSDK.Widgets/2.6.5, Microsoft.WindowsAppSDK.WinUI/2.6.5
+== report-main-light.txt
+chat loaded: True
+main-light-01-initial.png printwindow=True 1000x740
+uia: incomplete section literal text present = True
+uia: element named like 'First body' = group 'Fixture Main: <details><summary>First
+
+First body
+
+</details>
+
+<details><summary>Second</summary>
+
+Second body
+
+</details>'
+uia: no element named exactly 'Second'
+main-light-05-incomplete-then-valid.png printwindow=True 1000x740
+uia: timeline scrolled to top (vertical percent 100 -> 0)
+main-light-06-top.png printwindow=True 1000x740
+== report-pr-dark.txt
+chat loaded: True
+pr-dark-01-initial.png printwindow=True 1000x740
+uia: found 'Sources and evidence' type=button
+uia: state before = Collapsed
+uia: state after Expand = Expanded
+pr-dark-02-sources-expanded-nested-open.png printwindow=True 1000x740
+uia: second disclosure before = Collapsed
+uia: second disclosure after Expand = Expanded
+pr-dark-03-all-expanded.png printwindow=True 1000x740
+uia: after Collapse both = Collapsed/Collapsed
+pr-dark-04-recollapsed.png printwindow=True 1000x740
+uia: incomplete section literal text present = True
+uia: element named like 'First body' = group 'Fixture Main: <details><summary>First
+
+First body
+
+</details>
+
+<details><summary>Second</summary>
+
+Second body
+
+</details>'
+uia: found 'Second' type=button
+uia: 'Second' before = Collapsed
+uia: 'Second' after Expand = Expanded
+pr-dark-05-incomplete-then-valid.png printwindow=True 1000x740
+uia: timeline scrolled to top (vertical percent 16.5 -> 0)
+pr-dark-06-top.png printwindow=True 1000x740
+== report-pr-light.txt
+chat loaded: True
+pr-light-01-initial.png printwindow=True 1000x740
+uia: found 'Sources and evidence' type=button
+uia: state before = Collapsed
+uia: state after Expand = Expanded
+pr-light-02-sources-expanded-nested-open.png printwindow=True 1000x740
+uia: second disclosure before = Collapsed
+uia: second disclosure after Expand = Expanded
+pr-light-03-all-expanded.png printwindow=True 1000x740
+uia: after Collapse both = Collapsed/Collapsed
+pr-light-04-recollapsed.png printwindow=True 1000x740
+uia: incomplete section literal text present = True
+uia: element named like 'First body' = group 'Fixture Main: <details><summary>First
+
+First body
+
+</details>
+
+<details><summary>Second</summary>
+
+Second body
+
+</details>'
+uia: found 'Second' type=button
+uia: 'Second' before = Collapsed
+uia: 'Second' after Expand = Expanded
+pr-light-05-incomplete-then-valid.png printwindow=True 1000x740
+uia: timeline scrolled to top (vertical percent 16.5 -> 0)
+pr-light-06-top.png printwindow=True 1000x740
+png \real-hub\main-light-01-initial.png 37266
+png \real-hub\main-light-05-incomplete-then-valid.png 37266
+png \real-hub\main-light-06-top.png 51018
+png \real-hub\pr-dark-01-initial.png 35624
+png \real-hub\pr-dark-02-sources-expanded-nested-open.png 44817
+png \real-hub\pr-dark-03-all-expanded.png 43823
+png \real-hub\pr-dark-04-recollapsed.png 39743
+png \real-hub\pr-dark-05-incomplete-then-valid.png 36027
+png \real-hub\pr-dark-06-top.png 39359
+png \real-hub\pr-light-01-initial.png 35424
+png \real-hub\pr-light-02-sources-expanded-nested-open.png 45376
+png \real-hub\pr-light-03-all-expanded.png 43953
+png \real-hub\pr-light-04-recollapsed.png 39303
+png \real-hub\pr-light-05-incomplete-then-valid.png 35910
+png \real-hub\pr-light-06-top.png 38884
+png \visual\MarkdownDisclosure-Dark\capture-00.png 19733
+png \visual\MarkdownDisclosure-HighContrast\capture-00.png 19841
+png \visual\MarkdownDisclosure-Light\capture-00.png 19567
+png \visual\MarkdownDisclosureCollapsed-Dark\capture-00.png 6653
+png \visual\MarkdownDisclosureCollapsed-HighContrast\capture-00.png 6720
+png \visual\MarkdownDisclosureCollapsed-Light\capture-00.png 6646
+png \visual-webparity\MarkdownWebParity-Dark\capture-00.png 32794
+png \visual-webparity\MarkdownWebParity-Light\capture-00.png 32243
+png \visual-webparity\ReactorMarkdownListNarrow\capture-00.png 12048
+png \visual-webparity\ReactorMarkdownListNarrow\capture-01.png 12195
+png \visual-webparity\ReactorMarkdownListNested\capture-00.png 8380
+png \visual-webparity\ReactorMarkdownListWide\capture-00.png 9920
+png \visual-webparity\ReactorMarkdownListWide\capture-01.png 10067
+png \visual-webparity\ReactorMarkdownTable\capture-00.png 13030

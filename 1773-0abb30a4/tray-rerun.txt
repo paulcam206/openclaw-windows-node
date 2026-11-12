@@ -1,0 +1,7 @@
+Focused rerun after the full Tray run, same guest and build, run after the guest's UI lanes finished.
+The full run failed only OpenClawChatDataProviderTests.QueuedSend_RetryDriver_RejectsMissingScheduledWork(completesWithoutRearm: True): TimeoutException "Scheduled queue work did not reach admission within the phase budget" after 5 m 13 s; hosted CI passed it in 2 ms at this head.
+
+{"step":"test-tray-rerun-queued-send","exit":0,"threw":null,"seconds":6,"ended":"2026-11-12T13:36:02.2197476-08:00"}
+{"step":"test-tray-rerun-class","exit":0,"threw":null,"seconds":28,"ended":"2026-11-12T13:36:30.1428123-08:00"}
+TRX tray-rerun-chatdataprovider.trx outcome=Completed total=621 passed=621 failed=0
+TRX tray-rerun-queued-send.trx outcome=Completed total=2 passed=2 failed=0

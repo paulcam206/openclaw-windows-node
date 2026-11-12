@@ -1,0 +1,6 @@
+MicrosoftWindowsAppSDKVersion=2.6.5
+signature=Valid subject=CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US sha256=908E9A8ED8AD2AC765D6679543B0758812437E3AD6E3223F08D1730635CEC8EC
+installer exit=0
+Microsoft.WindowsAppRuntime.2_2.2.0.0_x64__8wekyb3d8bbwe
+Microsoft.WindowsAppRuntime.2_2.6.5.0_x86__8wekyb3d8bbwe
+Microsoft.WindowsAppRuntime.2_2.6.5.0_x64__8wekyb3d8bbwe

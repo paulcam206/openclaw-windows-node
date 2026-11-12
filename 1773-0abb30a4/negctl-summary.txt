@@ -1,0 +1,35 @@
+Negative control C on 0abb30a457652952c73aa78ff33cee67b3329525, disposable clone C:\v\p1773-neg, never pushed.
+Mutation: ChatMarkdownPresentation.IsHighContrast becomes a private probe instead of forwarding to the shared ChatThemeChanges owner.
+Expected: the web-parity proof, which drives ChatThemeChanges.IsHighContrast and ChatThemeChanges.Refresh(), fails because highlighters are not cleared.
+Controls A and B were not repeated: the code they mutate and the assertions they target are byte-identical to 6efff19a.
+
+--- mutation diff
+diff --git a/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs b/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs
+index 148e30c6..3314acb0 100644
+--- a/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs
++++ b/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs
+@@ -65,11 +65,7 @@ internal static class ChatMarkdownPresentation
+             });
+ 
+     /// <summary>High Contrast probe; tests may substitute it to exercise contrast transitions.</summary>
+-    internal static Func<bool> IsHighContrast
+-    {
+-        get => ChatThemeChanges.IsHighContrast;
+-        set => ChatThemeChanges.IsHighContrast = value;
+-    }
++    internal static Func<bool> IsHighContrast { get; set; } = static () => new global::Windows.UI.ViewManagement.AccessibilitySettings().HighContrast;
+ 
+     private static void WatchContrast(FrameworkElement target) =>
+         ChatThemeChanges.Watch(target, () =>
+
+--- result
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Dark") [7 s]
+   High Contrast clears chat highlighters
+     at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 193
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 233
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Light") [6 s]
+   High Contrast clears chat highlighters
+     at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 193
+   at OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(String themeName) in C:\v\p1773-neg\tests\OpenClaw.Tray.UITests\ReactorMarkdownWebParityProofTests.cs:line 233
+Failed!  - Failed:     2, Passed:     0, Skipped:     0, Total:     2, Duration: 13 s - OpenClaw.Tray.UITests.dll (net10.0)
+negctl c webparity exit=1
