@@ -1,0 +1,13 @@
+diff --git a/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs b/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs
+index 4f799c2e..62b6b2bb 100644
+--- a/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs
++++ b/tests/OpenClaw.TestSupport/Gateway/GatewayScenario.cs
+@@ -301,7 +301,7 @@ public sealed partial class GatewayScenario
+         Session[] sessions =
+         [
+             CreateSession(MainSessionKey, MainTitle, "main", "browse", 0,
+-                ["Can we browse the synthetic Gateway?", MainSentinel]),
++                Environment.GetEnvironmentVariable("OPENCLAW_PROOF_MAIN_TRANSCRIPT") is { Length: > 0 } proofPath ? JsonSerializer.Deserialize<string[]>(File.ReadAllText(proofPath))! : ["Can we browse the synthetic Gateway?", MainSentinel]),
+             CreateSession(LongSessionKey, LongTitle, "main", "browse", 1,
+                 Enumerable.Range(1, LongMessageCount).Select(LongMessage).ToArray()),
+             CreateSession(OtherSessionKey, OtherTitle, "research", "worker", 2,

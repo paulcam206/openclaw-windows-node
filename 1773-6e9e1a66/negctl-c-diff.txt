@@ -1,0 +1,17 @@
+diff --git a/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs b/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs
+index 148e30c6..3314acb0 100644
+--- a/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs
++++ b/src/OpenClaw.Tray.WinUI/Chat/ChatMarkdownPresentation.cs
+@@ -65,11 +65,7 @@ internal static class ChatMarkdownPresentation
+             });
+ 
+     /// <summary>High Contrast probe; tests may substitute it to exercise contrast transitions.</summary>
+-    internal static Func<bool> IsHighContrast
+-    {
+-        get => ChatThemeChanges.IsHighContrast;
+-        set => ChatThemeChanges.IsHighContrast = value;
+-    }
++    internal static Func<bool> IsHighContrast { get; set; } = static () => new global::Windows.UI.ViewManagement.AccessibilitySettings().HighContrast;
+ 
+     private static void WatchContrast(FrameworkElement target) =>
+         ChatThemeChanges.Watch(target, () =>

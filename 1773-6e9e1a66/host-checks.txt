@@ -1,0 +1,65 @@
+Host checks on 6e9e1a6660557048f766176b908deecec4c0b4d7 (tree 66edc836336995f7fc988dea52809776e4fe53e9), author's machine, 2026-11-13.
+
+== ./scripts/test-ci-workflow-contract.ps1 (exit 0)
+awaiting descendant awaiting descendant awaiting descendant descendant entered
+awaiting descendant CI output-idle process tests passed: exit/output fidelity, progressing fixture, silent fixture termination, tree termination, inherited-pipe deadline.
+CI workflow contracts passed: CodeQL branch/path gating, conservative lane routing, isolated core NuGet caching, stable gate enforcement, decoupled metadata/release builds, preserved test inventory, and fail-closed proof routing.
+
+== ./scripts/test-ci-ui-profile.ps1 (exit 0)
+fatal: path 'scripts/Set-CiUiTestEnvironment.ps1' exists on disk, but not in '37b66a98f0f199620dc21c55bc9f2bbf101f1561'
+PASS workflow step fails closed when the pipeline exporter is missing
+UI profile isolation: 9 checks passed.
+
+== ./scripts/validate-test-timing-patterns.ps1 (exit 0)
+::warning title=Timing baseline can be lowered::tests/OpenClaw.Shared.Tests/WebSocketClientBaseTests.cs: fixed-delay-readiness dropped from 11 to 10. Run .\scripts\validate-test-timing-patterns.ps1 -LowerBaseline and commit the baseline.
+Test timing pattern ratchet passed.
+
+== ./scripts/test-ci-gate-results.ps1 (exit 0)
+CI Gate regressions passed: selected lanes require success, intentional skips pass, and malformed or unexpected results fail closed.
+
+== ./scripts/test-alpha-promotion.ps1 (exit 0)
+Passed 34 alpha promotion cases and workflow source/publication contracts.
+
+== ./scripts/validate-docs.ps1 (exit 0)
+Proof-pool validation passed: 7 named pools checked.
+Documentation flow regression passed in 4.39s: both schema paths and final summary reached without duplicating the validator matrix.
+Documentation validation passed: 73 Markdown files checked.
+
+== ./build.ps1 (exit 0)
+✅ Windows detected
+✅ .NET SDK: 10.0.404
+✅ .NET SDK 10.0.400 or newer available
+✅ git version 2.56.1.windows.1
+✅ Windows SDK: 10.0.26100.0
+✅ WebView2 Runtime: 157.0.4341.57
+✅ Architecture: AMD64
+✅ Compatible app-local Visual C++ runtime detected
+✅ All prerequisites met!
+✅ Shared built successfully
+✅ Cli built successfully
+✅ WinNodeCli built successfully
+✅ SetupEngine built successfully
+✅ WinUI built successfully
+✅ SetupEngine
+✅ WinUI
+✅ WinNodeCli
+✅ Cli
+✅ Shared
+🦞 All builds succeeded!
+
+== dotnet test tests/OpenClaw.Tray.Tests --no-restore --filter "FullyQualifiedName~CiNugetCacheWorkflowTests|FullyQualifiedName~TestDeterminismGuardTests|FullyQualifiedName~ChatMarkdownDisclosureTests|FullyQualifiedName~ReactorChatMarkdownContractTests"
+Passed!  - Failed:     0, Passed:    69, Skipped:     0, Total:    69, Duration: 1 s - OpenClaw.Tray.Tests.dll (net10.0)
+
+== git -c core.whitespace= diff --check ec627156 6e9e1a66: clean (exit 0)
+
+== Negative control E: the disclosure step's if: restored to the old guard (no desktop-step guard); test-ci-workflow-contract.ps1
+NEGCTL E (old disclosure guard) exit=1
+
+     | Native Markdown disclosure proofs must run after earlier UI test failures and always outside release promotion;
+
+ci.yml restored and re-verified.
+
+== Ratchet negative control: before 6e9e1a66 added the marker (merge result f8974098), validate-test-timing-patterns.ps1 failed:
+::error title=Timing-sensitive test pattern::tests/OpenClaw.Tray.UITests/ReactorMarkdownDisclosureProofTests.cs: fixed-delay-readiness has 1 occurrence(s), baseline 0. Lines: 156. Wait for the observable condition instead: TestSupport.WaitForRenderedConditionAsync (in-process WinUI), WaitUiAsync (Gateway fixture UI Automation), or a TaskCompletionSource completed by the owner. Fixed delays and settle counts are not readiness.
+1 new timing-sensitive test pattern(s). Use the named helper or add '// test-timing-exception: <reason>' for a deliberate case. See docs/TEST_COVERAGE.md#deterministic-native-and-timing-sensitive-tests.
+(exit 1). After the marker in 6e9e1a66: 'Test timing pattern ratchet passed.' (exit 0). The ratchet's 'Timing baseline can be lowered' warning for tests/OpenClaw.Shared.Tests/WebSocketClientBaseTests.cs comes from main and is unrelated to this PR.

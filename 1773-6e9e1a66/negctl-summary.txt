@@ -1,0 +1,11 @@
+Negative control C at 6e9e1a66 (guest): ChatMarkdownPresentation.IsHighContrast turned into a private probe instead of forwarding to ChatThemeChanges.
+Expected: ReactorMarkdownWebParityProofTests fails at 'High Contrast clears chat highlighters' in both themes.
+
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Dark") [7 s]
+   High Contrast clears chat highlighters
+--- End of stack trace from previous location ---
+  Failed OpenClaw.Tray.UITests.ReactorMarkdownWebParityProofTests.AssistantMarkdown_UsesWebRhythmToneAndHighlightedCodeCards(themeName: "Light") [6 s]
+   High Contrast clears chat highlighters
+--- End of stack trace from previous location ---
+Failed!  - Failed:     2, Passed:     0, Skipped:     0, Total:     2, Duration: 13 s - OpenClaw.Tray.UITests.dll (net10.0)
+negctl c webparity exit=1

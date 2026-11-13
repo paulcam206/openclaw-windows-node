@@ -1,0 +1,18 @@
+chat loaded: True
+main-light-01-initial.png printwindow=True 1000x740
+uia: incomplete section literal text present = True
+uia: element named like 'First body' = group 'Fixture Main: <details><summary>First
+
+First body
+
+</details>
+
+<details><summary>Second</summary>
+
+Second body
+
+</details>'
+uia: no element named exactly 'Second'
+main-light-05-incomplete-then-valid.png printwindow=True 1000x740
+uia: timeline scrolled to top (vertical percent 100 -> 0)
+main-light-06-top.png printwindow=True 1000x740
