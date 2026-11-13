@@ -1,0 +1,16 @@
+PR #1773 head 5a1b897510c4128765eb06cfe94da54d972ae0a1 (tree b33f287319bfe6915a954d0271ed318b44450845): normal merge of main 20d851442129767678b3345b9d5b5ea8ae114410 into 8890e1b8.
+Author machine (Windows x64), on the resolved merge:
+  ./build.ps1: passed
+  ./scripts/test-ci-workflow-contract.ps1: passed (Tray UI shard partition, shared exclusions incl. NativeMarkdownProof, per-shard pipeline-owned roots, disclosure step)
+  ./scripts/test-ci-ui-profile.ps1: UI profile isolation: 9 checks passed
+  ./scripts/test-ci-gate-results.ps1: CI Gate regressions passed
+  ./scripts/test-alpha-promotion.ps1: Passed 34 alpha promotion cases and workflow source/publication contracts
+  ./scripts/validate-docs.ps1: Documentation validation passed: 73 Markdown files checked
+  dotnet test tests/OpenClaw.Tray.Tests --filter FullyQualifiedName~CiNugetCacheWorkflowTests: 4 passed, 0 failed
+  git -c core.whitespace= diff --check 20d85144 5a1b8975: clean
+
+Negative controls (each mutates only the tray-ui-shard job in ci.yml, runs one check, restores the file; final hash verified equal):
+  A shard job-level OPENCLAW_TRAY_DATA_DIR -> threw; Tray UI shard 'tray-ui-shard' must take 'OPENCLAW_TRAY_DATA_DIR:' from the pipeline exporter, not a job-level binding.
+  B shard filter without NativeMarkdownProof -> threw; Tray UI shards must both exclude cases owned by the accessibility, native-onboarding, Gateway fixture, production-resource, animation-preference and native-Markdown proof lanes.
+  C shard root step diverges -> threw; Every UI job must bind its isolated roots through the same pipeline step.
+  D shard without root step -> threw; Could not find CI step 'Configure isolated UI product roots'.

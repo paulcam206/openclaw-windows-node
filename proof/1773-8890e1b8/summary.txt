@@ -1,0 +1,45 @@
+PR #1773 head 8890e1b8966e5fa1095a9faac3da5a34d49d71ae (tree 1d55cbaa30009486f54cfdfc42ff412bee7c5249), merge base main 6ddc13b8eff7e49d1906b9f10a04685cd189f6fd
+Guest: crabbox Hyper-V lease cbx_b770281f3f03 (VM crabbox-63a4-pr1773g-0d9ad784), Windows 11 Enterprise Insider Preview 10.0.29683 x64, 6 vCPU / 8 GB, interactive session; released after the run.
+No product source, disclosure test or default UI-harness behavior differs between this head and 5a1b8975 (git diff 8890e1b8 5a1b8975 -- src is empty).
+
+== steps (exit codes, seconds)
+{"step":"checkout","exit":0,"threw":null,"seconds":12,"ended":"2026-11-12T18:16:59.4855862-08:00"}
+{"step":"windowsappruntime","exit":0,"threw":null,"seconds":10,"ended":"2026-11-12T18:17:09.3723962-08:00"}
+{"step":"build","exit":0,"threw":null,"seconds":803,"ended":"2026-11-12T18:30:32.1045642-08:00"}
+{"step":"build-shared-tests","exit":0,"threw":null,"seconds":17,"ended":"2026-11-12T18:30:49.0335774-08:00"}
+{"step":"build-tray-tests","exit":0,"threw":null,"seconds":17,"ended":"2026-11-12T18:31:06.2304166-08:00"}
+{"step":"test-shared","exit":0,"threw":null,"seconds":576,"ended":"2026-11-12T18:40:42.3061456-08:00"}
+{"step":"test-tray","exit":0,"threw":null,"seconds":240,"ended":"2026-11-12T18:44:43.3612560-08:00"}
+{"step":"validate-docs","exit":0,"threw":null,"seconds":22,"ended":"2026-11-12T18:45:05.8520170-08:00"}
+{"step":"ci-workflow-contract","exit":0,"threw":null,"seconds":57,"ended":"2026-11-12T18:46:03.1953434-08:00"}
+{"step":"ci-ui-profile","exit":0,"threw":null,"seconds":2,"ended":"2026-11-12T18:46:05.5533025-08:00"}
+{"step":"diff-check","exit":0,"threw":null,"seconds":0,"ended":"2026-11-12T18:46:05.7475508-08:00"}
+{"step":"lane-parser","exit":0,"threw":null,"seconds":15,"ended":"2026-11-12T18:46:21.0630315-08:00"}
+{"step":"lane-uitests-build","exit":0,"threw":null,"seconds":297,"ended":"2026-11-12T18:51:18.1274445-08:00"}
+{"step":"lane-native-markdown","exit":0,"threw":null,"seconds":166,"ended":"2026-11-12T18:54:04.5943301-08:00"}
+{"step":"lane-markdown-ui","exit":0,"threw":null,"seconds":6,"ended":"2026-11-12T18:54:10.2969496-08:00"}
+{"step":"ui-ci-failed-round1","exit":0,"threw":null,"seconds":116,"ended":"2026-11-12T18:56:05.8579255-08:00"}
+{"step":"ui-ci-failed-round2","exit":0,"threw":null,"seconds":88,"ended":"2026-11-12T18:57:33.5759086-08:00"}
+{"step":"ui-ci-failed-round3","exit":0,"threw":null,"seconds":82,"ended":"2026-11-12T18:58:55.3099457-08:00"}
+{"step":"summary","exit":0,"threw":null,"seconds":6,"ended":"2026-11-12T18:59:01.3083827-08:00"}
+
+== TRX
+\closeout\shared.trx outcome=Completed total=5878 executed=5849 passed=5849 failed=0
+\closeout\tray.trx outcome=Completed total=6384 executed=6384 passed=6384 failed=0
+\markdown-ui\markdown-ui.trx outcome=Completed total=7 executed=7 passed=7 failed=0
+\Markdown\977bd874090d4de19923fa63df6b78a4\markdown-disclosure.trx outcome=Completed total=2 executed=2 passed=2 failed=0
+\parser\parser.trx outcome=Completed total=27 executed=27 passed=27 failed=0
+\ui-ci-failed\ui-round1.trx outcome=Completed total=35 executed=35 passed=35 failed=0
+\ui-ci-failed\ui-round2.trx outcome=Completed total=35 executed=35 passed=35 failed=0
+\ui-ci-failed\ui-round3.trx outcome=Completed total=35 executed=35 passed=35 failed=0
+
+== binaries and package resolution
+pin ok C:\v\p1773 head=8890e1b8966e5fa1095a9faac3da5a34d49d71ae tree=1d55cbaa30009486f54cfdfc42ff412bee7c5249
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.WinUI.exe sha256=D609CFE52782941F180C286FFC8F1A79862D42800DDBEE4DEC61712913C5982C size=394240 mtime=2026-11-13T02:53:50.2443484Z version=2026.11.3-paulcam206-markdown-details-disclosures.1+77.Branch.paulcam206-markdown-details-disclosures.Sha.8890e1b8966e5fa1095a9faac3da5a34d49d71ae.8890e1b8966e5fa1095a9faac3da5a34d49d71ae
+C:\v\p1773\tests\OpenClaw.Tray.UITests\bin\Debug\net10.0-windows10.0.22621.0\win-x64\OpenClaw.Tray.UITests.dll sha256=1F2128E739A434F99690CEA09AD01A499959D6F22C395B879D35790924FFE0E6 size=5681664 mtime=2026-11-13T02:51:09.9399271Z version=1.0.0+8890e1b8966e5fa1095a9faac3da5a34d49d71ae
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.UI.Xaml.dll sha256=BA728EC8E18E86577581AC611B7379AD08F69D47898F0ADA0F1536F4313A9758 size=15191352 mtime=2026-10-31T15:15:00.0000000Z version=3.0
+C:\v\p1773\src\OpenClaw.Tray.WinUI\bin\Debug\net10.0-windows10.0.22621.0\win-x64\Microsoft.WindowsAppRuntime.dll sha256=D1EC4DD47EC6F1070C8BCA1A4BEFD85AAF1EF1C455234447B78046CD28D8E9A4 size=2639672 mtime=2026-10-31T08:58:56.0000000Z version=2.6
+C:\v\p1773\src\OpenClaw.Tray.WinUI\obj\project.assets.json -> Microsoft.UI.Reactor/0.1.0-preview.17, Microsoft.UI.Reactor.Advanced/0.1.0-preview.17, Microsoft.WindowsAppSDK/2.6.5, Microsoft.WindowsAppSDK.AI/2.6.5, Microsoft.WindowsAppSDK.Base/2.6.5, Microsoft.WindowsAppSDK.DWrite/2.6.5, Microsoft.WindowsAppSDK.Foundation/2.6.5, Microsoft.WindowsAppSDK.InteractiveExperiences/2.6.5, Microsoft.WindowsAppSDK.ML/2.6.5, Microsoft.WindowsAppSDK.Runtime/2.6.5, Microsoft.WindowsAppSDK.Search/2.6.5, Microsoft.WindowsAppSDK.Widgets/2.6.5, Microsoft.WindowsAppSDK.WinUI/2.6.5
+C:\v\p1773\tests\OpenClaw.Tray.UITests\obj\project.assets.json -> Microsoft.UI.Reactor/0.1.0-preview.17, Microsoft.UI.Reactor.Advanced/0.1.0-preview.17, Microsoft.WindowsAppSDK/2.6.5, Microsoft.WindowsAppSDK.AI/2.6.5, Microsoft.WindowsAppSDK.Base/2.6.5, Microsoft.WindowsAppSDK.DWrite/2.6.5, Microsoft.WindowsAppSDK.Foundation/2.6.5, Microsoft.WindowsAppSDK.InteractiveExperiences/2.6.5, Microsoft.WindowsAppSDK.ML/2.6.5, Microsoft.WindowsAppSDK.Runtime/2.6.5, Microsoft.WindowsAppSDK.Search/2.6.5, Microsoft.WindowsAppSDK.Widgets/2.6.5, Microsoft.WindowsAppSDK.WinUI/2.6.5
+
+== worktree status after the run (empty = clean)
