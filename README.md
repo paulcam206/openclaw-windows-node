@@ -17,4 +17,4 @@ isolated profile, App theme Dark.
 
 - `upgrade/`: an isolated profile written by the stable v2026.11.1 portable Companion (App theme Dark and notifications
   changed in its own Settings), then this head on that profile: first launch, picking Manuscript, and a restart, from
-  the themes PR head `5853ebd8`. `before-fix-2f103c4c-restart-settings.png` is the same restart before the startup fix.
+  the themes PR head `13691ff3`. `before-fix-2f103c4c-restart-settings.png` is the same restart before the startup fix.
