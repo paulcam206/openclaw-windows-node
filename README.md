@@ -14,3 +14,7 @@ isolated profile, App theme Dark.
 - `branding/`: from the branding PR head `3c298fbb`. `branding-*.png` are renderings saved by
   `GatewayThemeBrandingTests` with `OPENCLAW_UI_PROOF_DIR` set (brand mark, then the working indicator); the `*-busy-dark.png`
   shots are the running Companion with a reply in progress.
+
+- `upgrade/`: an isolated profile written by the stable v2026.11.1 portable Companion (App theme Dark and notifications
+  changed in its own Settings), then this head on that profile: first launch, picking Manuscript, and a restart, from
+  the themes PR head `5853ebd8`. `before-fix-2f103c4c-restart-settings.png` is the same restart before the startup fix.
