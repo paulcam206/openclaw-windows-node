@@ -18,3 +18,6 @@ isolated profile, App theme Dark.
 - `upgrade/`: an isolated profile written by the stable v2026.11.1 portable Companion (App theme Dark and notifications
   changed in its own Settings), then this head on that profile: first launch, picking Manuscript, and a restart, from
   the themes PR head `13691ff3`. `before-fix-2f103c4c-restart-settings.png` is the same restart before the startup fix.
+- `hc-cycle/`: the same upgrade profile on the themes head (code identical to `a97f2fcc`), Manuscript applied: Settings
+  before, with Windows High Contrast turned on (system `SPI_SETHIGHCONTRAST`), and after turning it off again. The
+  before and after shots differ in 0.01% of pixels (a 1 px strip at the window's top edge).
