@@ -902,6 +902,25 @@ public sealed class UsagePageRenderingTests(UIThreadFixture ui, ITestOutputHelpe
         ]);
     }
 
+    public static IEnumerable<object[]> ProbeIterations() =>
+        Enumerable.Range(0, int.TryParse(Environment.GetEnvironmentVariable("OPENCLAW_USAGE_PROBE_ITERATIONS"), out var count) ? count : 1)
+            .Select(iteration => new object[] { iteration });
+
+    [Theory]
+    [MemberData(nameof(ProbeIterations))]
+    [Trait("Category", "UsageSettleProbe")]
+    public Task ProbeSoak760(int iteration)
+    {
+        ProbeNote($"iteration {iteration}");
+        return Resizing_ReflowsMountedColumnsActionsAndTextWithoutOverlap(760, 696, 1, 2);
+    }
+
+    private static void ProbeNote(string text)
+    {
+        var path = Environment.GetEnvironmentVariable("OPENCLAW_USAGE_SETTLE_TRACE");
+        if (!string.IsNullOrEmpty(path)) File.AppendAllText(path, text + Environment.NewLine);
+    }
+
     [Theory]
     [InlineData(1400, 1200, 2, 1)]
     [InlineData(1000, 936, 2, 1)]
@@ -1030,6 +1049,9 @@ public sealed class UsagePageRenderingTests(UIThreadFixture ui, ITestOutputHelpe
                         + $"|{mast.ActualWidth}";
                     var stable = layout == previousMast && OriginsMatchArrangedOffsets(mast) &&
                         UsageActionSettled(host, "UsageExport");
+                    if (layout == previousMast && UsageActionSettled(host, "UsageExport") && !OriginsMatchArrangedOffsets(mast))
+                        ProbeNote($"intercepted frame={mastFrame} {layout}");
+                    if (stable) ProbeNote($"settled frame={mastFrame} {layout}");
                     previousMast = layout;
                     previousMastFrame = mastFrame;
                     if (stable) AssertSeparatedChildren(mast);
