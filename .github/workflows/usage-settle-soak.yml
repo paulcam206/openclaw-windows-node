@@ -1,0 +1,106 @@
+name: Usage settle soak
+
+# Throwaway evidence harness for openclaw/openclaw-windows-node#2278. Not for upstream.
+# Each runner reruns Resizing_ReflowsMountedColumnsActionsAndTextWithoutOverlap(760) 200 times in one
+# test host, publishes its counts as a check-run annotation, and fails if any iteration failed.
+run-name: Usage settle soak ${{ github.ref_name }} ${{ github.sha }}
+
+on:
+  push:
+    branches: [ 'probe/usage-settle-soak-*' ]
+
+permissions:
+  contents: read
+
+jobs:
+  soak:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ 1, 2, 3, 4, 5, 6 ]
+    name: soak runner ${{ matrix.runner }}
+    runs-on: windows-latest
+    timeout-minutes: 75
+    env:
+      OPENCLAW_REPO_ROOT: ${{ github.workspace }}
+      OPENCLAW_TRAY_DATA_DIR: ${{ github.workspace }}\TestData\data
+      OPENCLAW_TRAY_APPDATA_DIR: ${{ github.workspace }}\TestData\roaming
+      OPENCLAW_TRAY_LOCALAPPDATA_DIR: ${{ github.workspace }}\TestData\local
+      OPENCLAW_USAGE_PROBE_ITERATIONS: '200'
+      OPENCLAW_USAGE_SETTLE_TRACE: ${{ github.workspace }}\TestResults\Soak\trace.txt
+    steps:
+    - uses: actions/checkout@v7
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+
+    - uses: actions/setup-dotnet@v6
+      with:
+        dotnet-version: 10.0.x
+
+    - name: Restore and build UI tests
+      run: |
+        $ErrorActionPreference = 'Stop'
+        ./scripts/Initialize-ReactorPackages.ps1
+        dotnet restore tests/OpenClaw.Tray.UITests -r win-x64
+        dotnet build tests/OpenClaw.Tray.UITests -c Debug -r win-x64 --no-restore
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+    - name: Install WindowsAppRuntime
+      shell: pwsh
+      run: |
+        [xml]$props = Get-Content (Join-Path $env:GITHUB_WORKSPACE "Directory.Build.props")
+        $version = $props.SelectSingleNode("/Project/PropertyGroup/MicrosoftWindowsAppSDKVersion").InnerText.Trim()
+        $channel = [regex]::Match($version, '^\d+\.\d+').Value
+        $exe = "$env:RUNNER_TEMP\WindowsAppRuntimeInstall.exe"
+        Invoke-WebRequest -Uri "https://aka.ms/windowsappsdk/$channel/$version/windowsappruntimeinstall-x64.exe" -OutFile $exe
+        & $exe --quiet
+        if ($LASTEXITCODE -ne 0) { throw "WindowsAppRuntimeInstall failed with exit code $LASTEXITCODE" }
+
+    - name: Configure UI desktop
+      shell: pwsh
+      run: ./scripts/Set-CiDesktopResolution.ps1
+
+    - name: Soak the 760 resize case
+      shell: pwsh
+      run: |
+        New-Item -ItemType Directory -Force TestResults\Soak | Out-Null
+        dotnet test tests/OpenClaw.Tray.UITests -c Debug -r win-x64 --no-build `
+          --filter "FullyQualifiedName~ProbeSoak760" `
+          --logger "trx;LogFileName=soak.trx" --results-directory TestResults\Soak `
+          --blame-hang-timeout 300s
+        "dotnet test exit $LASTEXITCODE"
+        exit 0
+
+    - name: Publish soak result
+      shell: pwsh
+      run: |
+        $trxPath = 'TestResults\Soak\soak.trx'
+        if (-not (Test-Path $trxPath)) { "::error title=Usage settle soak runner ${{ matrix.runner }}::No test report was written."; exit 1 }
+        [xml]$trx = Get-Content $trxPath -Raw
+        $counters = $trx.TestRun.ResultSummary.Counters
+        $messages = @($trx.TestRun.Results.UnitTestResult | Where-Object { $_.outcome -eq 'Failed' } |
+          ForEach-Object { "$($_.Output.ErrorInfo.Message)".Trim() } | Sort-Object -Unique)
+        $trace = if (Test-Path $env:OPENCLAW_USAGE_SETTLE_TRACE) { Get-Content $env:OPENCLAW_USAGE_SETTLE_TRACE } else { @() }
+        $caught = 0; $current = $null; $seen = @{}
+        foreach ($line in $trace) {
+          if ($line -match '^iteration (\d+)$') { $current = $Matches[1] }
+          elseif ($line.StartsWith('intercepted') -and $current -and -not $seen[$current]) { $seen[$current] = $true; $caught++ }
+        }
+        $failure = ($messages -join ' | ').Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A')
+        $summary = "head ${{ github.sha }}: $($counters.total) iterations, $($counters.passed) passed, $($counters.failed) failed, $caught stale readings caught"
+        if ([int]$counters.failed -gt 0) {
+          "::error title=Usage settle soak runner ${{ matrix.runner }}::$summary. Failure: $failure"
+          "## Runner ${{ matrix.runner }}`n`n$summary`n`nFailure: ``$($messages -join ' | ')``" >> $env:GITHUB_STEP_SUMMARY
+          exit 1
+        }
+        "::notice title=Usage settle soak runner ${{ matrix.runner }}::$summary"
+        "## Runner ${{ matrix.runner }}`n`n$summary" >> $env:GITHUB_STEP_SUMMARY
+
+    - name: Upload soak results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v7
+      with:
+        name: usage-settle-soak-${{ matrix.runner }}
+        path: TestResults/Soak
+        if-no-files-found: warn
